@@ -1,4 +1,6 @@
+---
 title: This will be used as title-tag for demo post
+layout: post
 ---
 
 # This is a H1
