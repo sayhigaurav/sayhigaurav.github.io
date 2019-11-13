@@ -21,7 +21,10 @@ layout: default
   <div class="post-line"></div>
 
   {{ content }}
-  <B>Categories: </B>{{page.categories | capitalize | join: ', '}}
+
+  {% if page.categories %}
+    <h4>Categories: </h4>{{page.categories | capitalize | join: ', '}}
+  {% endif %}
 </div>
 
 {% if page.comments %}
