@@ -24,7 +24,7 @@ layout: default
 
   {% if page.categories %}
     {% assign page_categories = page.categories | split: "," | strip | upcase %}
-    <hb>Categories: </b>{{page_categories | join: ', '}}
+    <b>Categories: </b>{{page_categories}}
   {% endif %}
 </div>
 
