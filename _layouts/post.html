@@ -27,7 +27,7 @@ layout: default
     - {{ category | capitalize | split: ' ' | capitalize | join: ' ' }}
     {% endfor %}
     
-    <b>Categories: </b>{{page.categories | capitalize | join: ', '}}
+    <b>Categories: </b>{{page.categories}}
   {% endif %}
 </div>
 
