@@ -23,11 +23,7 @@ layout: default
   {{ content }}
 
   {% if page.categories %}
-    {% for category in page.categories %}
-    - {{ category | capitalize | split: ' ' | capitalize | join: ' ' }}
-    {% endfor %}
-    
-    <b>Categories: </b>{{page.categories | join: ', '}}
+    <a href="{{ '/categories' | prepend: site.baseurl }}">Categories: </a>{{page.categories | join: ', '}}
   {% endif %}
 </div>
 
