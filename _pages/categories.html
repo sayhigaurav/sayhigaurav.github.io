@@ -12,7 +12,7 @@ title: Categories
     <p></p>
 
     <h3 class="category-head">{{ category_name | slugize }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+    <a name="{{ category_name | slugize | camelcase }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
