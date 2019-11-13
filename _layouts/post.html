@@ -24,10 +24,10 @@ layout: default
 
   {% if page.categories %}
     {% for category in page.categories %}
-    - {{ category | split: " " | capitalize | join: " " }}
+    - {{ category | split: " " | capitalize }}
     {% endfor %}
     
-    <b>Categories: </b>{{page.categories}}
+    <b>Categories: </b>{{page.categories | capitalize | join: ', '}}
   {% endif %}
 </div>
 
