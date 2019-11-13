@@ -21,6 +21,7 @@ layout: default
   <div class="post-line"></div>
 
   {{ content }}
+  {{page.categories | capitalize | join: ', '}}
 </div>
 
 {% if page.comments %}
