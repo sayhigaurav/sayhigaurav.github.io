@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing Tale"
 author: "Chester"
-comments: true
+comments: false
 categories: false
 ---
 
